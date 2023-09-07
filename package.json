@@ -15,7 +15,7 @@
     "commands": [
       {
         "command": "infisical-env-loader.loadToken",
-        "title": "Infisical Env Manager"
+        "title": "Env Manager"
       }
     ]
   },
