@@ -17,6 +17,7 @@ export class InfisicalData {
   // eslint-disable-next-line @typescript-eslint/naming-convention
   private ALGORITHM: string = "aes-256-gcm";
   private secrets: { [key: string]: string | undefined | null } = {};
+  static pickedItem: string;
 
   constructor(public token: string) {
     this.serviceToken = token;
@@ -49,7 +50,10 @@ export class InfisicalData {
     return items;
   }
 
-  async getEnvFile(environment: string) {
+  async getEnvFile(environment: string | undefined) {
+    if (!environment) {
+      return;
+    }
     const { workspace, encryptedKey, iv, tag } = this.serviceTokenData;
     const serviceTokenSecret = this.serviceToken.substring(
       this.serviceToken.lastIndexOf(".") + 1
@@ -69,7 +73,6 @@ export class InfisicalData {
     );
 
     if (response.status === 200) {
-      
       const encryptedSecrets = response.data.secrets;
       const projectKey = this.decrypt({
         ciphertext: encryptedKey,

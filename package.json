@@ -15,7 +15,23 @@
     "commands": [
       {
         "command": "infisical-env-loader.loadToken",
-        "title": "Env Manager"
+        "title": "ENV MANAGER: Load Environment through Infisical Service Token"
+      },
+      {
+        "command": "infisical-env-loader.loadExistingToken",
+        "title": "ENV MANAGER: Load Environment from ExistingToken"
+      },
+      {
+        "command": "infisical-env-loader.loadDefaultEnv",
+        "title": "ENV MANAGER: Load Environment from Default Env file"
+      },
+      {
+        "command": "infisical-env-loader.reconfigureInfisical",
+        "title": "ENV MANAGER: Reconfigure Infisical"
+      },
+      {
+        "command": "infisical-env-loader.loadInfisicalWorkspaceSettings",
+        "title": "ENV MANAGER: load from workspace settings"
       }
     ]
   },
