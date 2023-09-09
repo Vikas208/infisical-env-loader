@@ -6,7 +6,7 @@ import {
   ENV_MANAGER_DEFAULT_ENV,
   ENV_MANAGER_TOKEN,
 } from "./services/constant";
-import { loadEvnFiles } from "./services/loaders";
+import { loadEvnFiles, loadLaunchJson } from "./services/loaders";
 
 // This method is called when your extension is activated
 // Your extension is activated the very first time the command is executed
@@ -127,8 +127,7 @@ export function activate(context: vscode.ExtensionContext) {
     "infisical-env-loader.loadInfisicalWorkspaceSettings",
     async () => {
       try {
-        const config = vscode.workspace.getConfiguration();
-        console.log(config);
+        await loadLaunchJson();
       } catch (err) {
         console.log("infisical-env-loader.loadExistingToke", err);
       }
