@@ -2,7 +2,7 @@
   "name": "infisical-env-loader",
   "displayName": "infisical-env-loader",
   "description": "Load Env file from Infisical",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.81.0"
   },
@@ -19,11 +19,11 @@
       },
       {
         "command": "infisical-env-loader.loadExistingToken",
-        "title": "ENV MANAGER: Load Environment from ExistingToken"
+        "title": "ENV MANAGER: Load Environment from Existing Token"
       },
       {
         "command": "infisical-env-loader.loadDefaultEnv",
-        "title": "ENV MANAGER: Load Environment from Default Env file"
+        "title": "ENV MANAGER: Load Environment from Last Selected Environment"
       },
       {
         "command": "infisical-env-loader.reconfigureInfisical",
