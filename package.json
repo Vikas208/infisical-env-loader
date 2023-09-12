@@ -9,6 +9,11 @@
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "directory": "src",
+    "url": "https://github.com/Vikas208/infisical-env-loader"
+  },
   "activationEvents": [],
   "main": "./dist/extension.js",
   "contributes": {
@@ -36,7 +41,8 @@
     ]
   },
   "scripts": {
-    "vscode:prepublish": "pnpm run package",
+    "vscode:prepublish": "npm run esbuild-base -- --minify",
+    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
     "compile": "webpack",
     "watch": "webpack --watch",
     "package": "webpack --mode production --devtool hidden-source-map",
