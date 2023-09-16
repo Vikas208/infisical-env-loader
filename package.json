@@ -1,6 +1,6 @@
 {
   "name": "infisical-env-loader",
-  "displayName": "infisical-env-loader",
+  "displayName": "Infisical Env Loader",
   "description": "Load Env file from Infisical",
   "version": "1.0.0",
   "engines": {
@@ -20,15 +20,15 @@
     "commands": [
       {
         "command": "infisical-env-loader.loadToken",
-        "title": "ENV MANAGER: Load Environment through Infisical Service Token"
+        "title": "ENV MANAGER: Load Environment Variables via Service Token."
       },
       {
         "command": "infisical-env-loader.loadExistingToken",
-        "title": "ENV MANAGER: Load Environment from Existing Token"
+        "title": "ENV MANAGER: Load from Last Selected Token"
       },
       {
         "command": "infisical-env-loader.loadDefaultEnv",
-        "title": "ENV MANAGER: Load Environment from Last Selected Environment"
+        "title": "ENV MANAGER: Load from Last Selected Env"
       },
       {
         "command": "infisical-env-loader.reconfigureInfisical",
@@ -36,7 +36,7 @@
       },
       {
         "command": "infisical-env-loader.loadInfisicalWorkspaceSettings",
-        "title": "ENV MANAGER: load from workspace settings"
+        "title": "ENV MANAGER: Load Environment Variables from launch.json."
       }
     ]
   },
