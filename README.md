@@ -5,7 +5,7 @@ Welcome to the Infisical Env Loader VSCode Extension! This extension simplifies 
 ## Features
 
 - **Load Environment Variables via Infisical Service Token**: Load environment variables securely using your Infisical service token.
-- **Direct Terminal Integration for Environment File Loading**: Quickly apply environment settings directly to your terminal for immediate use in your projects.
+
 - **Convenient User Preference Storage**: Save time and effort by remembering your last selected token and environment file.
 - **Flexible Configuration with "Reconfigure Infisical"**: Start fresh by removing previously loaded tokens and environment files from the extension storage.
 
@@ -28,19 +28,27 @@ To install the Infisical Env Loader VSCode Extension, follow these steps:
    - Enter your Infisical service token when prompted.
    - A user-friendly environment file selection interface will appear, simplifying the selection of your desired environment configuration.
 
-2. **Direct Terminal Integration for Environment File Loading**:
+2. **Loading Environment Variables from `launch.json`:**
 
-   - Choose the "ENV MANAGER: Load Environment Variables into Terminal" option to swiftly apply environment settings directly to your terminal for immediate use in your projects.
+   - Ensure you have a `launch.json` file in your project.
+   - Open Visual Studio Code.
+   - Navigate to the command palette.
+   - Type and select "ENV MANAGER: Load Environment Variables from `launch.json`."
+   - Choose the launch configuration from which you want to load the environment variables.
+   - **Note**: You have to put the following env variables under the env variable in the `launch.json` file
+     1. `infisicalWorkspaceToken`: Service token
+     2. `infisicalWorkspaceEnv`: env file name e.g. `dev`
 
 3. **Efficient User Preferences Storage**:
 
    - After successfully loading environment variables, the extension retains your token and environment file preferences.
    - The next time you use the extension, it offers the option to reload your last selected settings, saving you valuable time and effort.
-  
+
    - **Select from Last Token**:
+
      - Choose "ENV MANAGER: Load from Last Selected Token" to load environment variables using your previously selected token settings.
      - This feature streamlines your workflow by automatically applying your previously chosen token settings.
-  
+
    - **Select from Last Environment File**:
      - Alternatively, opt for "ENV MANAGER: Load from Last Selected Environment File" to quickly access and apply settings from your preferred environment configuration.
 
@@ -53,4 +61,5 @@ To install the Infisical Env Loader VSCode Extension, follow these steps:
 If you have any feedback, questions, or encounter any issues with the Infisical Env Loader VSCode Extension, please don't hesitate to reach out to us. Your input is invaluable as we continue to improve this extension to better serve your needs.
 
 ---
+
 Thank you for choosing the Infisical Env Loader VSCode Extension! Happy coding!
