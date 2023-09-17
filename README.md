@@ -44,7 +44,7 @@ or
 ```
 
 ```bash
-   vsce package --no-dependencies
+  vsce package --no-dependencies
 ```
 
 **Manual Installation of Infisical Env Loader VSCode Extension**
