@@ -1,5 +1,7 @@
 # Infisical Env Loader - Visual Studio Code Extension
 
+![](https://github.com/Vikas208/infisical-env-loader/blob/development/assets/logo.png)
+
 Welcome to the Infisical Env Loader VSCode Extension! This extension simplifies the management of environment variables within Visual Studio Code, making it easier to work with your Infisical-powered projects.
 
 ## Features
@@ -9,14 +11,77 @@ Welcome to the Infisical Env Loader VSCode Extension! This extension simplifies 
 - **Convenient User Preference Storage**: Save time and effort by remembering your last selected token and environment file.
 - **Flexible Configuration with "Reconfigure Infisical"**: Start fresh by removing previously loaded tokens and environment files from the extension storage.
 
-## Installation
+## Run Locally
 
-To install the Infisical Env Loader VSCode Extension, follow these steps:
+Clone the project
 
-1. Open Visual Studio Code.
-2. Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window.
-3. Search for "Infisical Env Loader" in the Extensions view search box.
-4. Click the Install button for the "Infisical Env Loader" extension.
+```bash
+  git clone https://github.com/Vikas208/infisical-env-loader
+```
+
+Go to the project directory
+
+```bash
+  cd infisical-env-loader
+```
+
+Install dependencies
+
+```bash
+  pnpm install
+```
+
+or
+
+```bash
+  yarn install
+```
+
+or
+
+```bash
+  npm install
+```
+
+```bash
+   vsce package --no-dependencies
+```
+
+**Manual Installation of Infisical Env Loader VSCode Extension**
+
+![](https://github.com/Vikas208/infisical-env-loader/blob/development/assets/steps.gif)
+
+Follow these steps to manually install the Infisical Env Loader VSCode Extension using the .vsix file:
+
+1. **Download the .vsix Extension File:**
+
+   - Locate the latest release and find the `.vsix` file associated with it. It will typically be named something like `infisical-env-loader-1.0.0.vsix`,
+
+2. **Install the Extension in Visual Studio Code:**
+
+   - Open Visual Studio Code.
+   - Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by using the shortcut `Ctrl+Shift+X` (or `Cmd+Shift+X` on Mac).
+   - Click the three dots (ellipsis) at the top-right corner of the Extensions view to open the context menu.
+   - Select "Install from VSIX..." from the context menu.
+
+3. **Select the Downloaded .vsix File:**
+
+   - Navigate to the location where you downloaded the `.vsix` file in Step 1.
+   - Select the downloaded `.vsix` file.
+
+4. **Confirm Installation:**
+
+   - Visual Studio Code will prompt you to confirm the installation of the extension.
+   - Click "Install" to proceed.
+
+5. **Extension Installation Complete:**
+
+   - Once the installation is complete, you will see a notification confirming the successful installation of the Infisical Env Loader VSCode Extension.
+
+6. **Activate the Extension:**
+
+   - You may need to restart Visual Studio Code to activate the extension fully.
+   - After restarting, you should be able to use the extension's features as described in the extension's documentation.
 
 ## Usage
 
