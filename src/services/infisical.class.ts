@@ -123,7 +123,6 @@ export class InfisicalData {
       env: this.secrets,
       name: "Infisical Env Loader",
       message: `Don't Close this Terminal`,
-      cwd: ".",
     });
     terminal.show();
     vscode.window.showInformationMessage("Env File Loaded SuccessFully");
