@@ -1,8 +1,9 @@
 # Infisical Env Loader - Visual Studio Code Extension
 
-![](assets/logo.png)
+![envlogo](https://github.com/Vikas208/infisical-env-loader/assets/79859212/d30a7932-2457-4d30-b0f6-7876eac0bef7)
 
-Welcome to the Infisical Env Loader VSCode Extension! This extension simplifies the management of environment variables within Visual Studio Code, making it easier to work with your Infisical-powered projects.
+Welcome to the Infisical Env
+ Loader VSCode Extension! This extension simplifies the management of environment variables within Visual Studio Code, making it easier to work with your Infisical-powered projects.
 
 ## Features
 
@@ -49,7 +50,7 @@ or
 
 **Manual Installation of Infisical Env Loader VSCode Extension**
 
-![](assets/steps.gif)
+![VS-CODE-EXTENSION-infisical-gif](https://github.com/Vikas208/infisical-env-loader/assets/79859212/3cb541c1-1fcb-46c1-88bc-e83ca8f69b19)
 
 Follow these steps to manually install the Infisical Env Loader VSCode Extension using the .vsix file:
 
